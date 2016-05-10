@@ -14,10 +14,10 @@ body {
     width: 100%;
 } 
 
-.os-row {
-    vertical-align: bottom;
+.table>tbody>tr>td {
+    vertical-align: middle;
 }
 
-.os {
+.table>tbody>tr>td>i {
     font-size: 60px;
 }
