@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Liquid Galaxy</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+
+  <script>
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top - 70
+            }, 500);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+  <span id="top"></span>
+  <header class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#top">Liquid Galaxy</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#get-the-code">Get the Code</a></li>
+          <li><a href="#documentation">Documentation</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#showcase">Showcase</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!--<img class="header-bg" src="/img/header-bg.jpg" alt="Liquid Galaxy">-->
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Liquid Galaxy</h1>
+      <p>Liquid Galaxy</p>
+      <p><a class="btn btn-primary btn-lg" href="#get-the-code" role="button">Learn more »</a></p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section" id="get-the-code">
+      <h1 class="page-header">Get the Code</h1>
+      <p>Duis elementum pharetra fringilla. Ut quis mollis nunc, at lacinia velit. Morbi eget lacus ornare, sodales ante quis, sollicitudin neque. Nullam quam lectus, tristique eget luctus id, suscipit at eros. Curabitur id finibus libero. Maecenas commodo metus ut est condimentum vulputate. In ultricies lacus iaculis porttitor ullamcorper.</p>
+
+      <table class="table">
+        <tr>
+          <th>OS</th>
+          <th>File Name</th>
+          <th>File Size</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td rowspan=3><i class="fa fa-linux" aria-hidden="true"></i></td>
+          <td>Linux Liquid Galaxy File #1</td>
+          <td>45 Mb</td>
+          <td><a href="#">Download</a></td>
+        </tr>
+        <tr>
+          <td>Linux Liquid Galaxy File #2</td>
+          <td>33 Mb</td>
+          <td><a href="#">Download</a></td>
+        </tr>
+        <tr>
+          <td>Linux Liquid Galaxy File #3</td>
+          <td>19 Mb</td>
+          <td><a href="#">Download</a></td>
+        </tr>
+        <tr>
+          <td rowspan=3><i class="fa fa-apple" aria-hidden="true"></i></td>
+          <td>Apple Liquid Galaxy File #1</td>
+          <td>45 Mb</td>
+          <td><a href="#">Download</a></td>
+        </tr>
+        <tr>
+          <td>Apple Liquid Galaxy File #2</td>
+          <td>33 Mb</td>
+          <td><a href="#">Download</a></td>
+        </tr>
+        <tr>
+          <td>Apple Liquid Galaxy File #3</td>
+          <td>19 Mb</td>
+          <td><a href="#">Download</a></td>
+        </tr>
+        <tr>
+          <td rowspan=3><i class="fa fa-windows" aria-hidden="true"></i></td>
+          <td>Windows Liquid Galaxy File #1</td>
+          <td>45 Mb</td>
+          <td><a href="#">Download</a></td>
+        </tr>
+        <tr>
+          <td>Windows Liquid Galaxy File #2</td>
+          <td>33 Mb</td>
+          <td><a href="#">Download</a></td>
+        </tr>
+        <tr>
+          <td>Windows Liquid Galaxy File #3</td>
+          <td>19 Mb</td>
+          <td><a href="#">Download</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section" id="documentation">
+      <div class="row">
+        <h1 class="page-header">Documentation</h1>
+        <div class="col-sm-9">
+          <p>Duis elementum pharetra fringilla. Ut quis mollis nunc, at lacinia velit. Morbi eget lacus ornare, sodales ante quis, sollicitudin neque. Nullam quam lectus, tristique eget luctus id, suscipit at eros. Curabitur id finibus libero. Maecenas commodo metus ut est condimentum vulputate. In ultricies lacus iaculis porttitor ullamcorper.</p>
+          <a class="btn btn-default btn-lg" href="https://github.com/liquidgalaxy/liquid-galaxy/wiki" role="button">Liquid Galaxy wiki</a>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-side" src="/img/liquidgalaxy1.jpg" alt="Liquid Galaxy"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="faqs">
+      <div class="row">
+        <h1 class="page-header">Frequently Asked Questions</h1>
+        <div class="col-sm-3">
+          <img class="img-side" src="/img/liquidgalaxy2.jpg" alt="Liquid Galaxy"/>
+        </div>
+        <div class="col-sm-9">
+          <p>Nulla facilisi. Aliquam non dui nisl. Curabitur non turpis urna. Donec hendrerit purus at varius dignissim. Duis sed libero vitae neque tincidunt tempus ut in tortor. Pellentesque condimentum, est vitae posuere accumsan, elit ligula tempor lacus, id gravida magna mauris ac libero. Maecenas convallis sollicitudin dapibus. Etiam turpis est, suscipit ultricies tortor eu, posuere sodales neque. Duis sit amet tincidunt turpis. Sed ut accumsan lectus, sed condimentum dolor. Duis at augue neque. Etiam rutrum laoreet nunc in tincidunt. Etiam neque lectus, suscipit a bibendum at, hendrerit non ex. Nulla mattis auctor nisi, ut convallis nunc rutrum sit amet. Mauris quis libero sit amet lorem semper semper.</p>
+          <a class="btn btn-default btn-lg" href="https://github.com/liquidgalaxy/liquid-galaxy/issues" role="button">Submit an Issue</a>
+        </div>
+    </div>
+
+    <div class="section" id="showcase">
+      <h1 class="page-header">Showcase</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu nisi vel nibh euismod posuere vel eget metus. Aliquam id libero metus. Duis vulputate eros turpis, ac mollis urna sagittis non. Pellentesque eu arcu et ante vehicula eleifend. Phasellus at ullamcorper justo. Quisque pretium velit nulla, vel rhoncus velit tempus eget. Maecenas nec urna nisl. Vestibulum velit metus, pellentesque nec elementum nec, consequat at odio. Fusce fringilla massa non massa varius tempor. Morbi non mi nec tellus egestas sagittis. Duis cursus purus ligula, eu faucibus dolor hendrerit in. Pellentesque tellus mauris, sodales ut dolor vitae, aliquam elementum massa. Maecenas ac ultrices ipsum. Maecenas sit amet cursus urna. Duis elementum libero eu magna sollicitudin, ac condimentum velit ullamcorper.</p>
+
+      <p>Duis elementum pharetra fringilla. Ut quis mollis nunc, at lacinia velit. Morbi eget lacus ornare, sodales ante quis, sollicitudin neque. Nullam quam lectus, tristique eget luctus id, suscipit at eros. Curabitur id finibus libero. Maecenas commodo metus ut est condimentum vulputate. In ultricies lacus iaculis porttitor ullamcorper.</p>
+
+      <p>Nulla facilisi. Aliquam non dui nisl. Curabitur non turpis urna. Donec hendrerit purus at varius dignissim. Duis sed libero vitae neque tincidunt tempus ut in tortor. Pellentesque condimentum, est vitae posuere accumsan, elit ligula tempor lacus, id gravida magna mauris ac libero. Maecenas convallis sollicitudin dapibus. Etiam turpis est, suscipit ultricies tortor eu, posuere sodales neque. Duis sit amet tincidunt turpis. Sed ut accumsan lectus, sed condimentum dolor. Duis at augue neque. Etiam rutrum laoreet nunc in tincidunt. Etiam neque lectus, suscipit a bibendum at, hendrerit non ex. Nulla mattis auctor nisi, ut convallis nunc rutrum sit amet. Mauris quis libero sit amet lorem semper semper.</p>
+    </div>
+
+    <div class="section" id="contact">
+      <h1 class="page-header">Contact</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu nisi vel nibh euismod posuere vel eget metus. Aliquam id libero metus. Duis vulputate eros turpis, ac mollis urna sagittis non. Pellentesque eu arcu et ante vehicula eleifend. Phasellus at ullamcorper justo. Quisque pretium velit nulla, vel rhoncus velit tempus eget. Maecenas nec urna nisl. Vestibulum velit metus, pellentesque nec elementum nec, consequat at odio. Fusce fringilla massa non massa varius tempor. Morbi non mi nec tellus egestas sagittis. Duis cursus purus ligula, eu faucibus dolor hendrerit in. Pellentesque tellus mauris, sodales ut dolor vitae, aliquam elementum massa. Maecenas ac ultrices ipsum. Maecenas sit amet cursus urna. Duis elementum libero eu magna sollicitudin, ac condimentum velit ullamcorper.</p>
+
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="message">Ask us a question</label>
+          <textarea rows="10" class="form-control" name="message" id="message" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

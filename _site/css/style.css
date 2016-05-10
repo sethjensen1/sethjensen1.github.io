@@ -1,0 +1,19 @@
+body {
+    padding-top: 50px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.img-side {
+    width: 100%;
+} 
+
+.os-row {
+    vertical-align: bottom;
+}
+
+.os {
+    font-size: 60px;
+}
