@@ -3,7 +3,11 @@ body {
 }
 
 .section {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+}
+
+.footer {
+    margin-bottom: 25px;
 }
 
 .img-side {
