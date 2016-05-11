@@ -21,3 +21,11 @@ body {
 .table>tbody>tr>td>i {
     font-size: 60px;
 }
+
+#map {
+    padding: 30px;
+}
+
+#map > #container {
+    height: 400px;
+}

@@ -9,26 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-
-  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
-
-  <script>
-    $(function() {
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top - 70
-            }, 500);
-            return false;
-          }
-        }
-      });
-    });
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/leaflet.css" />
 </head>
 <body>
   <span id="top"></span>
@@ -154,13 +135,11 @@
 
     <div class="section" id="showcase">
       <h1 class="page-header">Showcase</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu nisi vel nibh euismod posuere vel eget metus. Aliquam id libero metus. Duis vulputate eros turpis, ac mollis urna sagittis non. Pellentesque eu arcu et ante vehicula eleifend. Phasellus at ullamcorper justo. Quisque pretium velit nulla, vel rhoncus velit tempus eget. Maecenas nec urna nisl. Vestibulum velit metus, pellentesque nec elementum nec, consequat at odio. Fusce fringilla massa non massa varius tempor. Morbi non mi nec tellus egestas sagittis. Duis cursus purus ligula, eu faucibus dolor hendrerit in. Pellentesque tellus mauris, sodales ut dolor vitae, aliquam elementum massa. Maecenas ac ultrices ipsum. Maecenas sit amet cursus urna. Duis elementum libero eu magna sollicitudin, ac condimentum velit ullamcorper.</p>
-
       <p>Duis elementum pharetra fringilla. Ut quis mollis nunc, at lacinia velit. Morbi eget lacus ornare, sodales ante quis, sollicitudin neque. Nullam quam lectus, tristique eget luctus id, suscipit at eros. Curabitur id finibus libero. Maecenas commodo metus ut est condimentum vulputate. In ultricies lacus iaculis porttitor ullamcorper.</p>
-
-      <p>Nulla facilisi. Aliquam non dui nisl. Curabitur non turpis urna. Donec hendrerit purus at varius dignissim. Duis sed libero vitae neque tincidunt tempus ut in tortor. Pellentesque condimentum, est vitae posuere accumsan, elit ligula tempor lacus, id gravida magna mauris ac libero. Maecenas convallis sollicitudin dapibus. Etiam turpis est, suscipit ultricies tortor eu, posuere sodales neque. Duis sit amet tincidunt turpis. Sed ut accumsan lectus, sed condimentum dolor. Duis at augue neque. Etiam rutrum laoreet nunc in tincidunt. Etiam neque lectus, suscipit a bibendum at, hendrerit non ex. Nulla mattis auctor nisi, ut convallis nunc rutrum sit amet. Mauris quis libero sit amet lorem semper semper.</p>
+      <div id="map">
+        <div id="container"></div>
+      </div>
     </div>
-
     <div class="section" id="contact">
       <h1 class="page-header">Contact</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu nisi vel nibh euismod posuere vel eget metus. Aliquam id libero metus. Duis vulputate eros turpis, ac mollis urna sagittis non. Pellentesque eu arcu et ante vehicula eleifend. Phasellus at ullamcorper justo. Quisque pretium velit nulla, vel rhoncus velit tempus eget. Maecenas nec urna nisl. Vestibulum velit metus, pellentesque nec elementum nec, consequat at odio. Fusce fringilla massa non massa varius tempor. Morbi non mi nec tellus egestas sagittis. Duis cursus purus ligula, eu faucibus dolor hendrerit in. Pellentesque tellus mauris, sodales ut dolor vitae, aliquam elementum massa. Maecenas ac ultrices ipsum. Maecenas sit amet cursus urna. Duis elementum libero eu magna sollicitudin, ac condimentum velit ullamcorper.</p>
@@ -185,5 +164,26 @@
       <p>© 2016 End Point Corporation</p>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/underscore-min.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/installations.js"></script>
+  <script>
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top - 70
+            }, 500);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
